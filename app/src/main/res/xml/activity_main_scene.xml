@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+
+        <!--        <OnClick-->
+        <!--            motion:clickAction="toggle"-->
+        <!--            motion:targetId="@+id/btn" />-->
+        <OnSwipe
+            motion:dragDirection="dragEnd"
+            motion:touchAnchorId="@id/btn"
+            motion:touchAnchorSide="end" />
+        <!--
+        motion:touchAnchorId 指的是您可以滑动并拖动的视图。
+        motion:touchAnchorSide 表示我们从右侧拖动视图。
+        motion:dragDirection 表示拖动的进度方向。
+        -->
+        <KeyFrameSet>
+
+            <KeyAttribute
+                android:alpha="0.2"
+                motion:framePosition="75"
+                motion:motionTarget="@id/btn">
+                <CustomAttribute
+                    motion:attributeName="background"
+                    motion:customColorValue="#E91E63" />
+            </KeyAttribute>
+
+            <KeyPosition
+                motion:framePosition="25"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn"
+                motion:pathMotionArc="startVertical" />
+            <KeyPosition
+                motion:framePosition="75"
+                motion:keyPositionType="parentRelative"
+                motion:motionTarget="@+id/btn"
+                motion:pathMotionArc="flip" />
+        </KeyFrameSet>
+        <!--
+            motion:motionTarget="@+id/button" 需要移动轨迹的view
+            motion:framePosition="[0-100]" framePosition是一个介于 0 和 100 之间的数字。它定义了在动画KeyPosition中的应用时间，1 表示 1% 的动画，99 表示 99% 的动画
+            motion:keyPositionType=’’ ‘’ keyPositionType这是如何KeyPosition修改路径。它可以是parentRelative，pathRelative，或deltaRelative
+            percentX | percentY是修改路径的量framePosition（值介于 0.0 和 1.0 之间，允许负值和值 >1）
+            motion:keyPositionType=’’ ''参数解释一下:
+            pathRelative	它与其他两个完全不同，因为 X 轴从头到尾遵循运动路径。所以，(0,0)是的起始位置，并且(1,0)是结束位置。
+            deltaRelative	deltaRelative也是“相对变化”的一种说法。在deltaRelative坐标中(0,0)是视图的起始位置，(1,1)是结束位置。X 轴和 Y 轴与屏幕对齐。X 轴在屏幕上始终是水平的，Y 轴在屏幕上始终是垂直的。与 相比parentRelative，主要区别在于坐标仅描述了视图将在其中移动的屏幕部分。
+            parentRelative	parentRelative使用相同的坐标系作为屏幕。它定义(0, 0)在整个 的左上角MotionLayout和(1, 1)右下角。
+        -->
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/btn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:pathMotionArc="startVertical" />
+        <Constraint
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/btn"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <Constraint
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+</MotionScene>
