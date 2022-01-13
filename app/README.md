@@ -2,8 +2,11 @@ demo学习地址 一级标题
 =================
 
 [学习地址]( https://blog.csdn.net/weixin_44819566/article/details/122191259?spm=1001.2014.3001.5501)
-[学习地址2](https://blog.csdn.net/u013762572/article/details/90233221)
-
+[学习地址2](https://blog.csdn.net/knight1996/article/details/108015536?spm=1001.2101.3001.6650.6&depth_1-utm_relevant_index=9)
+[MotionLayout/ConstraintLayout 官方示例 (GitHub)](https://github.com/android/views-widgets-samples/tree/master/ConstraintLayoutExamples)
+[属性介绍比较详细](https://juejin.cn/post/6854573206653812743)
+  
+  
     <Transition
     app:constraintSetStart="@+id/start"
     app:constraintSetEnd="@+id/end"

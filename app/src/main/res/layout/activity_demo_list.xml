@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.example.motionlayoutdemo.DemoListActivity.Presenter" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DemoListActivity">
+
+        <Button
+            android:id="@+id/btnCodeOperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{presenter::codeControl}"
+            android:text="代码控制" />
+
+        <Button
+            android:id="@+id/btnHWTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿华为拨号界面" />
+
+        <Button
+            android:id="@+id/btnViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{presenter::viewPager}"
+            android:text="和ViewPager组合使用"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnEasterEggs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="仿Android 11 彩蛋"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnCoordinator"
+            android:layout_width="match_parent"
+            android:onClick="@{presenter::coordinatorLayout}"
+            android:layout_height="wrap_content"
+            android:text="CoordinatorLayout"
+            android:textAllCaps="false" />
+        <Button
+            android:id="@+id/flow"
+            android:layout_width="match_parent"
+            android:onClick="@{presenter::flow}"
+            android:layout_height="wrap_content"
+            android:text="flow"
+            android:textAllCaps="false" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

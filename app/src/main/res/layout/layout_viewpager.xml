@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@mipmap/viewpager_bg"
+    app:layoutDescription="@xml/layout_viewpager_scene"
+    app:showPaths="true">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/doraemon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_wb_sunny_24"
+        app:shapeAppearanceOverlay="@style/circleImageStyle" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
