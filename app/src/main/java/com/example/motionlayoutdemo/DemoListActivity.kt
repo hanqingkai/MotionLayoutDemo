@@ -40,5 +40,9 @@ class DemoListActivity : AppCompatActivity() {
             startActivity(v.context, Intent(v.context, ConstraintFlowActivity::class.java), null)
         }
 
+        fun android11(v: View) {
+            startActivity(v.context, Intent(v.context, EasterEggsActivity::class.java), null)
+        }
+
     }
 }
