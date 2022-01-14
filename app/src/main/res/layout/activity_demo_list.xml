@@ -60,5 +60,13 @@
             android:text="flow"
             android:textAllCaps="false" />
 
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{presenter::roundMenu}"
+            android:text="圆形菜单"
+            android:textAllCaps="false" />
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 </layout>

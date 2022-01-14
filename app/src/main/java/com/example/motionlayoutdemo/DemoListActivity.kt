@@ -44,5 +44,9 @@ class DemoListActivity : AppCompatActivity() {
             startActivity(v.context, Intent(v.context, EasterEggsActivity::class.java), null)
         }
 
+        fun roundMenu(v: View) {
+            startActivity(v.context, Intent(v.context, RoundMenuActivity::class.java), null)
+        }
+
     }
 }

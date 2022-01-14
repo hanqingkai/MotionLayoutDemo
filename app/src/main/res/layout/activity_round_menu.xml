@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_round_menu_scene"
+    tools:context=".RoundMenuActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab0"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="#fff"
+        app:elevation="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab30"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/design_default_color_error"
+        app:elevation="@null" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab90"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/colorPrimary"
+        app:elevation="@null" />
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab135"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/black"
+        app:elevation="@null" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab180"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/design_default_color_primary"
+        app:elevation="@null" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab225"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="#fff"
+        app:elevation="@null" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab270"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/design_default_color_secondary"
+        app:elevation="@null" />
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab315"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/purple_200"
+        app:elevation="@null" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab360"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@android:drawable/ic_dialog_info"
+        android:tint="@color/purple_700"
+        app:elevation="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCenter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@null"
+        android:src="@android:drawable/ic_dialog_email"
+        android:tint="#fff"
+        app:elevation="@null" />
+</androidx.constraintlayout.motion.widget.MotionLayout>
